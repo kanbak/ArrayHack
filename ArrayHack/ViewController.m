@@ -13,6 +13,7 @@
     IBOutlet UILabel *arrayLabel;
     int numberArray[10];
     int numberOfElements;
+    
 }
 - (IBAction)addElement:(id)sender;
 - (IBAction)removeElement:(id)sender;
@@ -29,9 +30,10 @@
 
     for (i = 0; i <= 9; i++) {
         numberArray[i] = i + 1;
+        numberOfElements = i;
     }
     
-    numberOfElements = i;
+    
     [self displayArray];
 }
 
@@ -55,11 +57,8 @@
     
     for (i = 0; i <= 9; i++) {
         numberArray[i] = i + 1;
+        numberOfElements = i;
     }
-    
-    numberOfElements = i;
-
-    
     
     
     
@@ -72,9 +71,10 @@
     
     for (i = 0; i <= 8; i++) {
         numberArray[i] = i + 1;
+        numberOfElements = i;
+
     }
     
-    numberOfElements = i;
    
 
     
