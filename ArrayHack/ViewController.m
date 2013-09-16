@@ -53,31 +53,13 @@
 
 - (IBAction)addElement:(id)sender {
     // Put your code to add the element here;
-    int i;
-    
-    for (i = 0; i <= 9; i++) {
-        numberArray[i] = i + 1;
-        numberOfElements = i;
-    }
-    
-    
-    
+    numberOfElements = numberOfElements +1;
     [self displayArray];
 }
 
 - (IBAction)removeElement:(id)sender {
     // Put your code to remove the element here;
-    int i;
-    
-    for (i = 0; i <= 8; i++) {
-        numberArray[i] = i + 1;
-        numberOfElements = i;
-
-    }
-    
-   
-
-    
+    numberOfElements = numberOfElements -1;
     [self displayArray];
 }
 
